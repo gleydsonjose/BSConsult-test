@@ -1,10 +1,10 @@
 # BSConsult test
-### Choose Language: [PT-BR](#PT-BR) | [EN](#EN)
+### Choose Language: [PT-BR](#portuguese-brazil) | [EN](#english)
 ---
-## English {#EN}
+## English
 
 ---
-## Portuguese Brazil {#PT-BR}
+## Portuguese Brazil
 
 Este projeto foi um teste passado para mim pela BSConsult, e infelizmente eu acabei não sendo aprovado, mas o código do teste(que está com problemas) está na pasta **_fail-code_**.
 >O código desse teste foi criado com **HTML+JS+CSS**.
