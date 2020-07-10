@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+#newsletter-body-outer {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #F4F4F4;
+  align-items: center;
+  padding-top: 40px;
+  width: 100vw;
+}
+
+#newsletter-body-outer #newsletter-body-inner {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 60%;
+}
+
+#newsletter-body-outer #newsletter-body-inner #newsletter-body-title {
+  font-family: 'Teko', sans-serif;
+  font-size: 24pt;
+  color: #44ACCF;
+  margin-bottom: 10px;
+}
+
+#newsletter-body-outer #newsletter-body-inner #newsletter-body-text {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 10pt;
+  color: #707070;
+}
+
+#newsletter-body-outer #newsletter-body-inner #newsletter-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 35px;
+}
+
+#newsletter-body-outer #newsletter-body-inner #newsletter-form #newsletter-form-input-group {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#newsletter-body-outer #newsletter-body-inner #newsletter-form #newsletter-form-input-group .newsletter-form-input {
+  padding: 5px 6px;
+  outline: none;
+  border: 1px solid #44ACCF;
+  margin-right: 16px;
+}
+
+#newsletter-body-outer #newsletter-body-inner #newsletter-form #newsletter-form-input-group .newsletter-form-input:focus {
+  border: 1px solid #585858;
+  box-shadow: 0 0 2px 0 #585858;
+}
+
+#newsletter-body-outer #newsletter-body-inner #newsletter-form #newsletter-form-input-group .newsletter-form-input:last-child {
+  margin-right: 0;
+}
+
+#newsletter-body-outer #newsletter-body-inner #newsletter-form #newsletter-form-input-group #newsletter-form-input-age {
+  width: 100px;
+}
+
+#newsletter-body-outer #newsletter-body-inner #newsletter-form #newsletter-form-submit {
+  margin-top: 25px;
+  font-family: 'Teko', sans-serif;
+  font-size: 13pt;
+  border: none;
+  background-color: #ffffff;
+  color: #44ACD0;
+  padding: 2px 28px;
+  user-select: none;
+}
+
+#newsletter-body-outer #newsletter-body-inner #newsletter-form #newsletter-form-submit:hover {
+  background-color: #44ACD0;
+  color: #ffffff;
+  cursor: pointer;  
+}
+
+#newsletter-body-outer #newsletter-body-separator {
+  width: 100vw;
+  margin-top: 30px;
+  position: relative;
+  top: 20px;
+  user-select: none;
+}
+
+#newsletter-body-outer #newsletter-body-separator img {
+  width: 100%;
+  display: block;
+}

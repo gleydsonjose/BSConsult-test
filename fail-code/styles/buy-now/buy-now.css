@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+#buy-now-body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: linear-gradient(to right, #44ACD0, #96BC4F);
+  width: 100%;
+  padding: 40px 0;
+}
+
+#buy-now-body #buy-now-title {
+  font-family: 'Teko', sans-serif;
+  color: #ffffff;
+  font-size: 24pt;
+  margin-bottom: 5px;
+}
+
+#buy-now-body #buy-now-text {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 10pt;
+  color: #ffffff;
+}
+
+#buy-now-body #buy-now-btn-buy {
+  margin-top: 35px;
+  font-family: 'Teko', sans-serif;
+  font-size: 13pt;
+  border: none;
+  background-color: #ffffff;
+  color: #44ACD0;
+  padding: 2px 28px;
+  user-select: none;
+}
+
+#buy-now-body #buy-now-btn-buy:hover {
+  background-color: #44ACD0;
+  color: #ffffff;
+  cursor: pointer;
+}
