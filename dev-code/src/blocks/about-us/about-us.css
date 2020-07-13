@@ -1,0 +1,68 @@
+.about-us {
+  --gray-color: #707070;
+  --blue-color: #44ACCF;
+  --black-color: #202020;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.about-us_margin_top {
+  margin-top: 2em;
+}
+
+.about-us__title {
+  font-family: 'Teko', sans-serif;
+  font-size: 27pt;
+  padding-bottom: 0.3em;
+  color: var(--gray-color);
+  font-weight: normal;
+}
+
+.about-us__text {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 13pt;
+  text-align: justify;
+  color: var(--gray-color);
+}
+
+.about-us__btn-read-more {
+  font-weight: bold;
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+
+.about-us__btn-read-more:hover {
+  color: var(--black-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+  .about-us {
+    max-width: 850px;
+  }
+  
+  .about-us_margin_top {
+    margin-top: 1.5em;
+  }
+  
+  .about-us__title {
+    font-size: 25pt;
+  }
+  
+  .about-us__text {
+    font-size: 11pt;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-us {
+    width: 85%;
+  }
+  
+  .about-us__text {
+    font-size: 13pt;
+  }
+}

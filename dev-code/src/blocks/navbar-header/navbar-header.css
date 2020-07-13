@@ -1,0 +1,321 @@
+.navbar-header {
+  --white-color: #fff;
+  --green-color: #95BC50;
+  --blue-color: #44ACCF;
+  --black-color: #202020;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 2em 0;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 850px;
+  width: 100%;
+  border-bottom: 1px solid var(--white-color);
+}
+
+.navbar-header_bg-color_primary {
+  background-color: transparent;
+}
+
+.navbar-header_bg-color_green {
+  background-color: var(--green-color);
+}
+
+.navbar-header_bg-color_blue {
+  background-color: var(--blue-color);
+}
+
+.navbar-header__first-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-header__logo {
+  width: 106px;
+  height: 39px;
+}
+
+.navbar-header__menu-mobile-btn {
+  display: none;
+  border: none;
+  outline: none;
+  height: 28px;
+  background: transparent;
+}
+
+.navbar-header__menu-mobile-btn:hover {
+  cursor: pointer;
+}
+
+.navbar-header__menu-mobile-svg {
+  height: 100%;
+  fill: var(--white-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.navbar-header__menu-mobile-btn:hover
+.navbar-header__menu-mobile-svg {
+  fill: var(--green-color);
+  cursor: pointer;
+}
+
+.navbar-header__menu-mobile-btn:hover
+.navbar-header__menu-mobile-svg_fill_color {
+  fill: var(--black-color);
+}
+
+.navbar-header__last-group {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-header__menu {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  align-items: center;
+  padding-right: 1em;
+}
+
+.navbar-header__menu-item {
+  position: relative;
+  font-family: 'Teko', sans-serif;
+  font-size: 14.5pt;
+  border-right: 1px solid var(--white-color);
+  user-select: none;
+}
+
+.navbar-header__menu-item:last-child {
+  border-right: none;
+}
+
+.navbar-header__submenu {
+  position: absolute;
+  list-style: none;
+  background-color: var(--green-color);
+  top: 3.45em;
+  left: -1.4em;
+  width: 130px;
+}
+
+.navbar-header__submenu_alternative_version {
+  background-color: var(--blue-color);
+  top: 0;
+  left: 6.7em;
+  width: 192px;
+}
+
+.navbar-header__menu-link,
+.navbar-header__submenu-title,
+.navbar-header__submenu-link {
+  display: block;
+  text-decoration: none;
+  color: var(--white-color);
+  padding: 0 0.5em;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-header__menu-link:hover,
+.navbar-header__submenu-title:hover,
+.navbar-header__submenu-link:hover {
+  background-color: var(--white-color);
+  color: var(--green-color);
+  cursor: pointer;
+}
+
+.navbar-header__submenu-top-icon {
+  height: 28px;
+  fill: var(--white-color);
+  position: absolute;
+  top: 2.4em;
+  left: 1.6em;
+  transform: rotate(90deg);
+}
+
+.navbar-header__submenu-icon {
+  display: none;
+}
+
+.navbar-header__submenu-button {
+  background-color: var(--white-color);
+  padding: 0.3em 2.5em;
+  font-family: 'Teko', sans-serif;
+  font-size: 10pt;
+  font-weight: 600;
+  border: none;
+  color: var(--blue-color);
+  box-shadow: 0 1px 3px 0 #478397;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-header__submenu-button:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.navbar-header__submenu-button_margin_axis {
+  margin: 0.6em 0 1.55em 0.8em;
+}
+
+.navbar-header__social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-header__social-media-link {
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar-header__social-media-link:hover {
+  opacity: 0.5;
+}
+
+.navbar-header__social-media-link_margin_right {
+  margin-right: 0.2em;
+}
+
+.navbar-header__social-media-img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-header {
+    flex-flow: column nowrap;
+    padding: 0;
+    border: none;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .navbar-header_bg-color_primary {
+    background: linear-gradient(rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0));
+  }
+
+  .navbar-header__first-group {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-header__menu-mobile-btn {
+    display: block;
+  }
+
+  .navbar-header__first-group {
+    padding: 1em;
+  }
+
+  .navbar-header__last-group {
+    position: absolute;
+    flex-flow: column nowrap;
+    width: 100%;
+    top: 4.4em;
+    background-color: var(--green-color);
+  }
+
+  .navbar-header__last-group_bg-color_blue {
+    background-color: var(--blue-color);
+  }
+
+  .navbar-header__menu {
+    flex-flow: column nowrap;
+    padding: 0;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .navbar-header__menu-item {
+    text-align: center;
+    font-size: 18pt;
+    border-bottom: 1px solid var(--white-color);
+    border-right: none;
+  }
+  
+  .navbar-header__menu-item:last-child {
+    border-bottom: none;
+    margin-bottom: 1px;
+  }
+  
+  .navbar-header__menu-item_border_none {
+    border: none;
+  }
+
+  .navbar-header__submenu {
+    position: static;
+    width: 100%;
+    background: transparent;
+  }
+
+  .navbar-header__menu-link,
+  .navbar-header__submenu-title {
+    padding: 0.3em 0;
+  }
+
+  .navbar-header__submenu-title {
+    position: relative;
+    border-bottom: 1px solid var(--white-color)
+  }
+
+  .navbar-header__submenu-title_border_none {
+    border: none;
+  }
+
+  .navbar-header__submenu-top-icon {
+    display: none;
+  }
+
+  .navbar-header__submenu-icon {
+    display: block;
+    height: 28px;
+    fill: var(--white-color);
+    position: absolute;
+    top: 0.40em;
+    left: 0;
+  }
+
+  .navbar-header__submenu-title:hover
+  .navbar-header__submenu-icon {
+    fill: var(--green-color);
+  }
+
+  .navbar-header__submenu-title:hover
+  .navbar-header__submenu-icon_fill_blue {
+    fill: var(--blue-color);
+  }
+  
+  .navbar-header__submenu-button_margin_axis {
+    margin: 2em 0;
+  }
+
+  .navbar-header__submenu-link {
+    padding: 0.3em 0;
+  }
+
+  .navbar-header__social-media {
+    padding: 1em 0;
+  }
+
+  .navbar-header__social-media-link_margin_right {
+    margin-right: 0.7em;
+  }
+
+  .navbar-header__social-media-img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Mixers */
+.text-blue:hover {
+  color: var(--blue-color);
+}

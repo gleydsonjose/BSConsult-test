@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-image: url(./header-background.png);
+  background-position: center top;
+  background-size: 1920px 800px;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.header__separator {
+  width: 100%;
+}
+
+.header__separator_margin_bottom {
+  margin-bottom: -1.5em;
+}
+
+@media screen and (max-width: 1600px) {
+  .header {
+    background-size: 1600px 666px;
+    height: 666px;
+  }
+
+  .header__separator_margin_bottom {
+    margin-bottom: -1em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    background-size: 900px 375px;
+    height: 375px;
+  }
+  
+  .header__separator_margin_bottom {
+    margin-bottom: -0.5em;
+  }
+}

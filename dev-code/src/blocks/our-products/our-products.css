@@ -1,0 +1,141 @@
+.our-products {
+  --gray-color: #707070;
+  --blue-color: #44ACCF;
+  --black-color: #202020;
+  --blue-light-color: #9bc8d4;
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 1000px;
+  align-items: center;
+  padding: 4em 0 4.8em 0;
+}
+
+.our-products__title {
+  font-family: 'Teko', sans-serif;
+  font-size: 27pt;
+  padding-bottom: 0.3em;
+  color: var(--gray-color);
+  font-weight: normal;
+}
+
+.our-products__main {
+  display: flex;
+  align-items: center;
+}
+
+.our-products__btn-slides {
+  display: flex;
+  padding: 1em;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.our-products__btn-slides:hover {
+  cursor: pointer;
+}
+
+.our-products__svg-slides {
+  width: 20px;
+  fill: var(--blue-color);
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.our-products__btn-slides:hover .our-products__svg-slides {
+  fill: var(--black-color);
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+.our-products__item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-right: 1px;
+  position: relative;
+  top: 0;
+}
+
+.our-products__item_slide-mobile_in {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in;
+}
+
+.our-products__item_slide-mobile_out {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-out;
+}
+
+.our-products__item_slide-desktop_out {
+  opacity: 0;
+  top: -100px;
+  transition: top 0.7s ease-out, opacity 0.5s ease-out;
+}
+
+.our-products__img {
+  width: 200px;
+}
+
+.our-products__item-title {
+  font-family: 'Teko', sans-serif;
+  font-weight: normal;
+  color: var(--blue-color);
+}
+
+.our-products__item-price {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 10pt;
+  color: var(--black-color);
+}
+
+/* Mixers */
+.disabled {
+  fill: var(--blue-light-color);
+}
+
+.disabled:hover {
+  cursor: default;
+}
+
+.our-products__btn-slides:hover .disabled {
+  fill: var(--blue-light-color);
+}
+
+@media screen and (max-width: 1600px) {
+  .our-products {
+    max-width: 850px;
+  }
+
+  .our-products__title {
+    font-size: 25pt;
+  }
+  
+  .our-products__img {
+    width: 190px;
+  }
+
+  .our-products__item-title {
+    font-size: 16pt;
+  }
+  
+  .our-products__item-price {
+    font-size: 8pt;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .our-products__item-title {
+    font-size: 16pt;
+  }
+  
+  .our-products__item-price {
+    font-size: 10pt;
+  }
+}
